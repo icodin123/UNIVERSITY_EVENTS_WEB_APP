@@ -1,0 +1,183 @@
+body {
+	font-family: Lato, sans-serif;
+	background-color: #F0F8FF;
+	margin: 0;
+	padding: 0;
+}
+
+.special {
+	text-decoration: none;
+
+	padding-left: 10px;
+
+	display: inline-block;
+	width: 275px;
+
+}
+
+.card {
+    border-radius: 15px;
+    width: 700px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.miniCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 400px;
+  height: 70px;
+  background-color: white;
+  margin-left: 190px;
+}
+
+.friends{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 5px;
+	width:400px;
+
+	background-color: white;
+  }
+
+
+.eventPic {
+	width: 140px;
+	height: 140px;
+	border: solid white;
+	border-radius: 50%;
+	float: left;
+	margin-top: 20px;
+}
+
+.miniEventPic {
+	width: 50px;
+	height: 50px;
+	border: solid white;
+	border-radius: 50%;
+	float: left;
+	margin-top: 10px;
+}
+
+
+
+.friendscont {
+	margin-left: 20px;
+}
+
+.eventDesc {
+	width: 480px;
+	margin-left: 10px;
+}
+
+.button {
+	margin-left: 110px;
+	margin-right: 30px;
+	width: 90px;
+	border-radius: 10%;
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+	border: none;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.duration {
+	margin-left: 200px;
+}
+
+
+
+.inviteButton {
+	background-color: #52de97;
+
+	border-radius: 10%;
+	color: white;
+
+	font-size: 15px;
+	border: none;
+
+	margin-right: 50px;
+}
+
+.cancel {
+	background-color: #c70d3a;
+}
+
+
+#ticketInfo {
+	width: 60%;
+	float: right;
+}
+
+#calendar {
+	width: 60%;
+	float: left;
+}
+
+#calendar img {
+	margin-left: 100px;
+}
+
+#eventHistory {
+	float: left;
+	width: 60%;
+}
+
+#eventHistory h3 {
+	padding-top: 20px;
+	margin-left: 100px;
+}
+
+#followerList {
+	display: none;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	border-radius: 5px;
+	position: absolute;
+	overflow: auto;
+	width: 30%;
+	height: 220px;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 10%;
+	background-color: white;
+}
+
+#followerList .miniCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 80px;
+  background-color: white;
+}
+
+#followerList .miniCard .button {
+	margin-left: 90px;
+	margin-right: 0px;
+	width: 90px;
+	padding: 5px;
+}
+
+#followerList h3 {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#closeInvite {
+	margin-left: 40%;
+	width: 90px;
+	border-radius: 10%;
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+	border: none;
+}
+
+#closeInvite:hover {
+	cursor: pointer;
+}

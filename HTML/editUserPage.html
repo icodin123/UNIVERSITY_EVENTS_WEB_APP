@@ -1,0 +1,62 @@
+<!--
+    Page to edit information about a user (from Admin's portal)
+    Data for this page is loaded using JavaScript and DOM manipulation, but the user whose data 
+    is loaded is fixed (hardcoded) in the "editUser.js" file.
+    In phase-2, data will be loaded using DataBase
+-->
+
+<!DOCTYPE html>
+<document>
+<head>
+    <title> Edit User </title>
+    <link rel="stylesheet" type="text/css" href="../CSS/universityApplication.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/editUser.css">
+    <script src="../JavaScript/data_repository.js"></script>
+    <script src="../JavaScript/editUser.js"></script>
+
+</head>
+
+<body>
+    <form id="registration_form">
+
+        <div class="card">
+            <h2 class="user_registration_header">Edit user account</h2>
+
+                <strong class="input_header">First name</strong>
+                <input id="firstNameInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+                <strong class="input_header">Last name</strong>
+                <input id="lastNameInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+                <strong class="input_header">Username</strong>
+                <input id="usernameInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+                <strong class="input_header">University name</strong>
+                <input id="universityNameInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+                <strong class="input_header">Is event organizer</strong>
+                <input id="isEventOrganizerInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+                <strong class="input_header">Email </strong>
+                <input id="emailInputField" type="email" class="user_text_input" placeholder="" required>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="applyButton">
+                   <input type="button" id="apply" value="Save"></input>
+                   <input type="button" id="delete" value="Delete"></input>
+                </div>
+
+        </div>
+
+    </form>
+
+
+</body>
+
+
+
+
+</document>

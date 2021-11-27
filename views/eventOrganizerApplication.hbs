@@ -1,0 +1,45 @@
+<!--
+Page for application to request profile promotion to "Event Organizer".
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Organizer App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/user_registration_style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/newEvent_style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/eventRegistration.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+</head>
+
+<body>
+        
+        
+        {{#if isEventOrganizer}}
+            {{> organizerHeader}}
+        {{else}}
+            {{> normalHeader}}
+        {{/if}}
+
+
+        <form method="post" action="/users/becomeOrganizer" id="registration_form">
+        <div class="card" id="container">
+            <h2 class="user_registration_header" id="eventHeader"> Event Organizer Confirmation </h2>
+            <hr>
+            By becoming an event organizer, you will have the power to <b> create events for {{currUser.currentInstitution}}. <br>
+            However, this will mean that {{currUser.currentInstitution}} has a link to your profile on their dashboard. <br>
+            By clicking <b> Apply </b> button below, you understand that this will mean that the university can access your profile. <br>
+            If found that you are mis-representing the {{currUser.currentInstitution}} in any way through the events you create, the university can have your account terminated.  
+
+            </div>
+            <input type="submit" id="register_button" value="Apply" > </input>
+        </div>
+
+
+
+    </form>
+    <script type="text/javascript" src="/javascripts/dropdown.js"></script>
+
+</body>
+</html>

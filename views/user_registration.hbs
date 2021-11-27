@@ -1,0 +1,70 @@
+<!--
+  Page that allows user to signup to univent (non-university users).
+  Not used in phase-1 demonstartion. The user who is used ("user" - "John Wick") is hardcoded
+  for the proof-of-concept
+-->
+
+<!DOCTYPE html>
+<document>
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/user_registration_style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+
+</head>
+
+<body>
+
+    <br>
+    <form id="registration_form" action="/register" method="post">
+
+        <div class="card">
+            <h2 class="user_registration_header"> User Registration</h2>
+
+                <h4 class="input_header"> Username </h4>
+                <input id="username" name="username" type="text" class="user_text_input" placeholder="example: univiteuser123" required></input>
+
+                <h4 class="input_header"> Password </h4>
+                <input id="password" name="password" type="password" class="user_text_input" placeholder="Password" required>
+
+                <h4 class="input_header"> Email </h4>
+                <input id="email" name="email" type="email" class="user_text_input" placeholder="example: john.smith@example.com" required>
+
+
+                <h4 class="input_header"> First Name </h4>
+                <input id="first_name" name="firstname" type="text" class="user_text_input" placeholder="example: John" required>
+
+                <h4 class="input_header"> Last Name </h4>
+                <input id="last_name" name="lastname" type="text" class="user_text_input" placeholder="example: Doe" required>
+
+                <h4 class="input_header"> Current Institution </h4>
+                <select class="user_text_input" name="currentInstitution" id="univerisity_selector" required>
+                    {{#each universities}}
+                    <option value="{{this.name}}">{{this.name}}</option>
+                    {{/each}}
+                </select>
+
+                <h4 class="input_header"> Program of Study </h4>
+                <select class="user_text_input" name="programOfStudy" id="program_selector" required>
+                    
+                </select>
+
+                <h4 class="input_header"> Year of Study </h4>
+                <input type="number" class="user_number_input" name="yearOfStudy" min="0" required>
+
+                <hr>
+                <br>
+                <input type="submit" id="register_button" value="register" > </input>
+
+
+        </div>
+
+    </form>
+    <script type="text/javascript" src="/javascripts/user_registration.js"></script>
+    <script type="text/javascript" src="/javascripts/dropdown.js"></script>
+
+</body>
+
+
+
+
+</document>

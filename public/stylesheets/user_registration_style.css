@@ -1,0 +1,66 @@
+body {
+    background-color: aliceblue;
+    margin-top: 10px;
+    font-family: Lato, sans-serif;
+    padding: 0;
+}
+
+
+.user_text_input {
+    display: block;
+    margin:auto;
+    margin-bottom: 25px;
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.user_number_input {
+    display: block;
+    margin:auto;
+    margin-bottom: 25px;
+    margin-left:12%;
+    width: 25%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input_header{
+
+    margin-bottom: 5px;
+    margin-left:12%;
+
+}
+
+#register_button {
+    display: block;
+    margin: auto;
+    background-color: rgb(70, 203, 63); /* Green */
+    color: white;
+    padding: 12px 32px;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+.user_registration_header{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 60%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }

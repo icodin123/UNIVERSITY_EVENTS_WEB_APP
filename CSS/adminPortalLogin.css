@@ -1,0 +1,91 @@
+.icon {
+    height: 75px;
+    width: 75px;
+    padding-right: 20px;
+}
+body {
+    background-color: aliceblue;
+    margin-top: 100px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.heading{
+    color:#00b8e6;
+    font-size: 70px;
+}
+
+#promo {
+  width: 60%;
+  display: inline-block;
+  margin: 0px;
+}
+#university_account_prompt{
+    margin-left:18px;
+}
+
+#user_login_box {
+    position: relative;
+    left: 36%;
+}
+
+#username_input {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#user_input {
+    padding-top: 15px;
+}
+
+#password_input {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login_button {
+    display: block;
+    margin: auto;
+    background-color: rgb(59, 152, 252); /* Blue */
+    color: white;
+    padding: 12px 32px;
+    width: 75%;
+    border-radius: 5px;
+    font-size: 12pt;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+#back_button {
+    display: block;
+    margin: auto;
+    background-color: rgb(70, 203, 63); /* Green */
+    color: white;
+    padding: 12px 32px;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 12pt;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+.icon_container {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.promo_text {
+    position: absolute;
+    top: 30px;
+}

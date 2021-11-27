@@ -1,0 +1,55 @@
+<!--
+    Page used by university to apply for an account on Univent.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/universityApplication.css">
+    <script src="../JavaScript/data_repository.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form id="registration_form">
+
+        <div class="card">
+            <h2 class="user_registration_header">Apply for University Account</h2>
+
+                <strong class="input_header">University name</strong>
+
+                <input id="username" type="text" class="user_text_input" placeholder="Enter name of your university here" required></input>
+
+                <strong class="input_header"> Official email </strong>
+
+                <input id="email" type="email" class="user_text_input" placeholder="Enter email of your university here" required>
+
+                <strong class="input_header"> Contact person </strong>
+
+
+
+                <input id="contactName" type="text" class="user_text_input"
+                placeholder="Enter full name of the contact person here" required>
+
+
+
+                <strong class="input_header"> Letter </strong>
+                <textarea id='letterInput' name="letter" cols="40" rows="5"></textarea>
+
+                <br>
+                <br>
+                <br>
+
+    </form>
+    <div class="applyButton">
+       <input type="submit" id="apply" value="Apply" >
+       <input type="submit" id="back" value="Back" >
+    </div>
+</div>
+    <script src="../JavaScript/universityApplication.js"></script>
+</body>
+
+
+
+
+</html>

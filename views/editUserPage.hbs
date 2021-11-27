@@ -1,0 +1,59 @@
+<!--
+  Page to edit University of Waterloo's information.
+  For phase1, the change in information is not stored and a separate page with final information is
+  used to give illusion of state.
+  In phase2, this data will be updated in a DataBase so that when loaded the change stays.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Edit Info </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/universityApplication.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/editUser.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    {{#if isEventOrganizer}}
+      {{> organizerHeader}}
+    {{else}}
+      {{> normalHeader}}
+    {{/if}}
+
+
+    <form id="registration_form" enctype="multipart/form-data" action="/users/edit" method="post">
+
+        <div class="card">
+            <h2 class="user_registration_header">Edit your account </h2>
+
+                <strong class="input_header">Biography</strong>
+                <textarea class="user_text_input" name="bio" id="biography"></textarea>
+
+                <strong class="input_header">Profile Picture</strong>
+                <input type="file" class="user_text_input" name="profilePic" id="universityImage"/>
+
+                <div class="applyButton">
+                   <input type="submit" id="apply" value="Save"></input>
+                </div>
+
+              </form>
+
+              <br>
+
+        </div>
+
+    </form>
+
+    <script src="/javascripts/editUniversity.js"></script>
+</body>
+
+
+
+
+</html>

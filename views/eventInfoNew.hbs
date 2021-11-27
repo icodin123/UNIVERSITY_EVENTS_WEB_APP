@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Event information page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/eventInfoPage.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/eventFeed.css">
+ </head>
+
+ <body>
+
+
+    {{#if isEventOrganizer}}
+      {{> organizerHeader}}
+    {{else}}
+      {{> normalHeader}}
+    {{/if}}
+
+
+    {{#if open}}
+
+    <div id = 'descriptionTab' class='eventInfoTab'>
+
+      <!-- Hardcoded image for the event -->
+
+      <h2 id='eventTitle'>{{eventName}}</h2>
+
+      <div id="description">
+      {{eventDescription}}
+      </div>
+
+   	</div>
+
+ 	<div id='dateTab' class='eventInfoTab'>
+
+    <p id='eventDate' class='eventInfoEntry'>Date: {{eventDate}}</p>
+
+    <p id='eventLocation' class='eventInfoEntry'>Location: {{eventLoc}}</p>
+
+    <p id='eventTime' class='eventInfoEntry'>Time: {{eventStart}} - {{eventEnd}}</p>
+
+    <p id='eventBy' class='eventInfoEntry'></p>
+
+ 	</div>
+
+
+{{/if}}
+
+{{#if registered}}
+  <div id='dateTab2' class='eventInfoTab'>
+    <p>You have already registered for this event.</p>
+  </div>
+{{/if }}
+
+
+  {{#if open}}
+  <div id='dateTab' class='eventInfoTab'>
+
+    <span id="seatingInfoText"></span>
+    <br>
+    <form id="getTicketsForm" action="/getTicket" method="post">
+      <div id="getTicketsButton">
+
+        <input type="hidden" name="event_id" id="event_id" value = {{id}}></input>
+          <button id='ticketsButton' type="submit" name="button">Get tickets</button>
+      </div>
+    </form>
+ 	</div>
+
+  {{/if}}
+
+  <script src="/javascripts/eventInfoCommon.js"></script>
+ </body>
+
+</html>

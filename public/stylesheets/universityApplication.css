@@ -1,0 +1,96 @@
+body {
+    background-color: aliceblue;
+    margin-top: 10px;
+    font-family: Lato, sans-serif;
+    padding: 0;
+}
+
+
+.user_text_input {
+    display: block;
+    margin:auto;
+    margin-bottom: 25px;
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#letter {
+    display: block;
+    margin:auto;
+    margin-bottom: 25px;
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.user_number_input {
+    display: block;
+    margin:auto;
+    margin-bottom: 25px;
+    margin-left:12%;
+    width: 25%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input_header{
+
+    margin-bottom: 5px;
+    margin-left:12%;
+
+}
+
+.applyButton{
+  display: flex;
+  justify-content: center;
+}
+
+.applyButton input{
+
+	cursor: pointer;
+	display:inline-block;
+	border-radius: 10px;
+	font-weight: bold;
+  font-size: 100%;
+  border: none;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+	margin-right: 10px;
+	width: 150px;
+	height: 30px;
+}
+
+#back {
+  background-color: #c70d3a;
+}
+
+#apply {
+  background-color: #52de97;
+}
+
+
+.user_registration_header{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 60%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }

@@ -1,0 +1,58 @@
+/** Miscellaneous Classes Used for Styling*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 400px;
+  height: 310px;
+  background-color: white;
+}
+
+.heading {
+  text-align: center;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+.emphasis {
+  color: #357EC7;
+}
+
+  /** Styles for NAVIGATION BAR */
+.navigationBar {
+  background-color: #66CCCC;
+  width: 100%;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+.navigationBar a {
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  color: white;
+  width: 100%;
+}
+
+.navigationBar a:hover {
+  background-color: #342D7E;
+}
+
+.navigationBar ul {
+  margin: 0;
+}
+
+.inlineList ul{
+  list-style: none;
+}
+
+.inlineList li {
+  display: inline-block
+}
+
+

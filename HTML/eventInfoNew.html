@@ -1,0 +1,105 @@
+<!-- 
+Event Info page for the event that is created as part of the demo. 
+Updated using JavaScript and DOM manipulation but is updated using a 
+hardcoded Event object (found in data_repository -- called newEvent).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Event information page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/eventInfoPage.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+    <script src="../JavaScript/data_repository.js"></script>
+    <script src="../JavaScript/eventInfoCommon.js"></script>
+    <script src="../JavaScript/eventInfoNew.js"></script>
+ </head>
+
+ <body>
+
+
+   <div id="header">
+
+     <ul id="headerOptions">
+       <li>
+
+           <form action="" class="searchForm">
+             <input type="text" name="searchInput" placeholder="Search">
+             <input type="submit" value="Search" class="searchButton">
+           </form>
+
+       </li>
+
+       <li class = "textButton">
+         <a href="">Browse events</a>
+       </li>
+
+       <li class = "textButton">
+         <a href="tickets.html">My tickets</a>
+       </li>
+
+       <li class = "textButton">
+         <a href="newEvent.html">Create event</a>
+       </li>
+       <li class = "textButton">
+         <a href="user.html">Profile</a>
+       </li>
+        <li class= "textButton">
+          <div id="settings">
+            <div id="clickSettings">Settings</div>
+            <div id="options">
+              <a href="../index.html"><div class="opt">Logout</div></a>
+              <a href="editUserPage.html"><div class="opt">Edit</div></a>
+            </div>
+          </div>
+        </li>
+     </ul>
+  	</div>
+
+    <div id = 'descriptionTab' class='eventInfoTab'>
+
+      <!-- Hardcoded image for the event -->
+      <img id="eventDescriptionImage" src="../Images/study.png">
+      <h2 id='eventTitle'></h2>
+
+      <div id="description">
+      </div>
+
+
+   	</div>
+
+
+ 	<div id='dateTab' class='eventInfoTab'>
+
+    <p id='eventDate' class='eventInfoEntry'></p>
+
+    <p id='eventLocation' class='eventInfoEntry'></p>
+
+    <p id='eventTime' class='eventInfoEntry'></p>
+
+    <p id='eventBy' class='eventInfoEntry'></p>
+
+    <p id='eventOrganizers' class='eventInfoEntry'></p>
+
+
+ 	</div>
+
+  <div id='dateTab' class='eventInfoTab'>
+
+    <span id="seatingInfoText">Seating: 0 / 50</span>
+    <br>
+    <div id="getTicketsButton">
+      <button id='ticketsButton' type="button" name="button">Get tickets</button>
+    </div>
+
+ 	</div>
+
+
+
+
+  <script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+ </body>
+</html>

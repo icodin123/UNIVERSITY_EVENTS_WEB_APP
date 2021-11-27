@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title> Univent </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/homepage_style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/misc.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 class="heading"> Univent </h1>
+    <div id="promo"> <h2>Connect with your peers on Univent.</h2>
+
+    <div class="icon_container" id="events_icon">
+        <img class="icon" src="/images/news.png">
+        <span class="promo_text"> Keep up to date with events happening around campus.</span>
+    </div>
+
+    <div class="icon_container" id="events_icon">
+        <img class="icon" src="/images/connect.png">
+        <span class="promo_text"> Connect with peers from your Univerisity and others around the world.</span>
+    </div>
+
+    <div class="icon_container" id="events_icon">
+        <img class="icon" src="/images/share.jpg">
+        <span class="promo_text"> Share what events your attending.</span>
+    </div>
+    </div>
+        
+    <div id="user_login_box"> 
+        <div class="card"> 
+            <form id="login_form" action="/login" method="post">
+                <div id="user_input">
+                    <input type="text" id="username_input" name="username" placeholder="Username">
+                    <input type="password" id="password_input" name="password" placeholder="Password">
+                </div>
+            
+                <input type="submit" id="login_button" value="Login">
+                <hr>
+            </form>
+            <form id="new_account" action="/register" method="get">
+                <input type="submit" id="new_account_button" value="Create new account">
+                <a href="/universities/requestAccount" class="account_prompt"> new university? </a> <br>
+                <a href="/admin/login" class="account_prompt">admin? click here</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+

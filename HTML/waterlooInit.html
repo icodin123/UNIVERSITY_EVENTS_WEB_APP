@@ -1,0 +1,89 @@
+<!--
+	Initial page for UWaterloo after they have just created their account
+	The page is hardcoded in phase1. Database will be used to retrieve information for this page
+	in phase2.
+-->
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>University of Waterloo</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/misc.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/user.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+		 
+
+		 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="profilePicture">
+			<img id="profilePic" src="../Images/profilePic.png" />
+		</div>
+
+		<div id="header">
+		    <ul id="headerOptions">
+		      <li>
+		          <form action="" class="searchForm">
+		            <input type="text" name="searchInput" placeholder="Search">
+		            <input type="submit" value="Search" class="searchButton">
+		          </form>
+		      </li>
+
+		      <li class = "textButton">
+		        <a href="eventFeed.html">Browse Events</a>
+		      </li>
+
+		      <li class = "textButton">
+		        <a href="waterlooFinal.html">Profile</a>
+		      </li>
+
+		      <li class = "textButton">
+		      </li>
+
+		      <li class = "textButton">
+		      </li>
+
+		      <li class= "textButton">
+		      	<div id="settings">
+		      		<div id="clickSettings">Settings</div>
+		      		<div id="options">
+		      			<a href="../index.html"><div class="opt">Logout</div></a>
+		      			<a href="editUniversityPage.html"><div class="opt">Edit</div></a>
+		      		</div>
+		      	</div>
+		      </li>
+		    </ul>
+		</div>
+
+		<!-- User Name Section -->
+		<div id="userName">
+			<h1> University of Waterloo </h1>
+		</div>
+
+		<!-- User Info Section -->
+		<div id="userInfo">
+			<div class="inlineList" id="userStats">
+				<ul>
+					<li><span id="friendNum">0</span> Followers </li>
+				</ul>
+			</div>
+
+			<div id="userBio">
+				<h2><span class="emphasis">Address: </span>200 University Ave W, Waterloo, ON</h2>
+				<h2><span class="emphasis">No Event Organizers</span></h2>
+			</div>
+		</div>
+
+
+		<!-- Info about events this user is attending -->
+		<div class="tagContainer">
+			<h3> No events at University of Waterloo </h3>
+
+		</div>
+
+
+		<script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+		<script type="text/javascript" src="../JavaScript/data_repository.js"></script>
+	</body>
+</html>

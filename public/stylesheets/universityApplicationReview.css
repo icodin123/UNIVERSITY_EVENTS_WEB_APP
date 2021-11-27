@@ -1,0 +1,34 @@
+body{
+  padding: 0;
+}
+
+strong{
+  margin-bottom: 5px;
+  margin-left:12%;
+}
+
+#universityLetter{
+  font-weight: 600;
+}
+
+#deny{
+  background-color: red;
+  color: white;
+  width: 20%;
+  cursor: pointer;
+}
+
+#accept{
+  background-color: green;
+  color: white;
+  width: 20%;
+  cursor: pointer;
+}
+
+#user_input{
+  margin-left: 12%;
+}
+
+#password_input{
+  margin-left: 12%;
+}

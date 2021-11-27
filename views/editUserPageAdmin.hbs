@@ -1,0 +1,68 @@
+<!--
+    Page to edit information about a user (from Admin's portal)
+    Data for this page is loaded using JavaScript and DOM manipulation, but the user whose data
+    is loaded is fixed (hardcoded) in the "editUser.js" file.
+    In phase-2, data will be loaded using DataBase
+-->
+
+<!DOCTYPE html>
+<document>
+<head>
+    <title> Edit User </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/universityApplication.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/editUser.css">
+    <script src="/javascripts/editUser.js"></script>
+
+</head>
+
+<body>
+      <div class="card">
+          <h2 class="user_registration_header">Edit user account</h2>
+
+              <form id="applyForm" action="/saveUser" method="put">
+
+              <input type="hidden" name="user_id" id="user_id" value = {{id}}></input>
+
+              <strong class="input_header">First name</strong>
+              <input name="firstNameInputField" id="firstNameInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+              <strong class="input_header">Last name</strong>
+              <input name="lastNameInputField" id="lastNameInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+              <strong class="input_header">Username</strong>
+              <input name="usernameInputField" id="usernameInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+              <strong class="input_header">University name</strong>
+              <input name="universityNameInputField" id="universityNameInputField" type="text" class="user_text_input" placeholder="" required></input>
+
+              <strong class="input_header">Email </strong>
+              <input name="emailInputField" id="emailInputField" type="email" class="user_text_input" placeholder="" required>
+
+              <br>
+              <br>
+              <br>
+
+                <div class="applyButton">
+                   <input type="submit" id="apply" value="Save"></input>
+                </div>
+
+              </form>
+
+              <br>
+
+              <form id="deleteForm" action="/deleteUser" method="delete">
+                <div class="applyButton">
+                  <input type="hidden" name="user_id_delete" id="user_id_delete" value = {{id}}></input>
+                  <input type="submit" id="delete" value="Delete"></input>
+                </div>
+              </form>
+
+        </div>
+
+
+</body>
+
+
+
+
+</document>

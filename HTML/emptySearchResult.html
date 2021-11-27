@@ -1,0 +1,59 @@
+<!--
+  Page to be displayed in case the user types something other than "user3" in the search bar.
+  ONLY A CONTINGENCY. IF ALL GOES WELL, THIS WILL NEVER BE SHOWN
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Your Event Feed</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/eventFeed.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/searchResult.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+ </head>
+
+ <body>
+
+ 	<div id="header">
+
+    <ul id="headerOptions">
+      <li>
+
+          <form action="" class="searchForm">
+            <input type="text" name="searchInput" placeholder="Search">
+            <input type="submit" value="Search" class="searchButton">
+          </form>
+
+      </li>
+
+      <li class = "textButton">
+        <a href="">Browse events</a>
+      </li>
+
+      <li class = "textButton">
+        <a href="tickets.html">My tickets</a>
+      </li>
+
+      <li class = "textButton">
+        <a href="eventOrganizerApplication.html">Request Promotion</a>
+      </li>
+      <li class = "textButton">
+        <a href="user.html">Profile</a>
+      </li>
+    </ul>
+ 	</div>
+
+
+ 	<div id="searchResultList">
+         <p> no search results found</p>
+
+ 	</div>
+    <script src="../JavaScript/data_repository.js"></script>
+    <script src="../JavaScript/event_feed.js"></script>
+
+ </body>
+</html>

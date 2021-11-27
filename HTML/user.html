@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>John Wick</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/misc.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/user.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+		 
+
+		 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="profilePicture">
+			<img id="profilePic" src="../Images/wick.jpg" />
+		</div>
+
+		<div id="header">
+		    <ul id="headerOptions">
+		      <li>
+		          <form action="" class="searchForm">
+		            <input type="text" name="searchInput" placeholder="Search">
+		            <input type="submit" value="Search" class="searchButton">
+		          </form>
+		      </li>
+
+		      <li class = "textButton">
+		        <a href="eventFeed.html">Browse Events</a>
+		      </li>
+
+		      <li class = "textButton">
+		        <a href="tickets.html">My Tickets</a>
+		      </li>
+
+		      <li class = "textButton">
+		        <a href="eventOrganizerApplication.html">Request Promotion</a>
+		      </li>
+		      <li class = "textButton">
+		        <a href="user.html">Profile</a>
+		      </li>
+		      <li class= "textButton">
+		      	<div id="settings">
+		      		<div id="clickSettings">Settings</div>
+		      		<div id="options">
+		      			<a href="../index.html"><div class="opt">Logout</div></a>
+		      			<a href="editUserPage.html"><div class="opt">Edit</div></a>
+		      		</div>
+		      	</div>
+		      </li>
+		    </ul>
+		</div>
+
+		<!-- User Name Section -->
+		<div id="userName">
+			<h1> John Wick </h1>
+		</div>
+
+		<!-- User Info Section: Hardcoded for phase1. Will retrieve from DB (Data Base) in phase2 -->
+		<div id="userInfo">
+			<div class="inlineList" id="userStats">
+				<ul>
+					<li><span id="friendNum">0</span> Friends </li>
+				</ul>
+			</div>
+
+			<div id="userBio">
+				<h2>Studies at <span class="emphasis">University of Toronto </span></h2>
+				<p><span class="emphasis">Bio:</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				</p>
+				<h2 class="heading"><span class="emphasis">Friends</span></h2>
+				<div id="friendList" class="inlineList">
+					<ul id="listOfFriends">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Info about events this user is attending -->
+		<div class="tagContainer">
+			<h3> Events John is attending </h3>
+
+			<!-- Event 1-->
+			<div class="card">
+				<img class="eventPic" src="../Images/halloween.jpg" />
+				<!-- Harcoded for Phase 1. Will be determined dynamically from server in phase2-->
+				<h3 class="emphasis heading">2019/11/15 --- Bahen</h3>
+				<h4 class="heading">Machine Learning Hackathon </h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+			</div>
+
+
+		</div>
+
+		<!-- Info about friend requests this person has -->
+		<div id="friendRequests" class="tagContainer">
+			<h3> Friend Requests </h3>
+
+			<!-- Friend Request 1: Hardcooded for phase1. Will retrive from DB in phase2 -->
+			<div class="card">
+				<img class="eventPic" src="../Images/bourne.jpg" />
+				<h3 class="emphasis heading"> Jason Bourne </h3>
+				<div class="requestButtons">
+					<input type="button" id="acceptUser2" value="accept" class="button green"/>
+					<input type="button" id="declineUser2" value="decline" class="button red"/>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+		<script type="text/javascript" src="../JavaScript/data_repository.js"></script>
+		<script type="text/javascript" src="../JavaScript/user.js"></script>
+	</body>
+</html>

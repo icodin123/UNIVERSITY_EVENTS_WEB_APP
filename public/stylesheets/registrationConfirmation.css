@@ -1,0 +1,26 @@
+.event_card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding: 0;
+  }
+
+body {
+    background-color: aliceblue;
+    margin: 0px;
+    font-family: Lato, sans-serif;
+}
+
+.user_registration_header{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+}
+
+#checkMark{
+    width: 40px;
+    height: 40px;
+}

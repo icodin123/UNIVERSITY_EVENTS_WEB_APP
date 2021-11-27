@@ -1,0 +1,74 @@
+<!--
+Event Info page for an event. Updated using JavaScript and DOM manipulation but is updated using a
+hardcoded Event object (found in data_repository).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Event information page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/eventInfoPage.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+    <script src="../JavaScript/eventInfoCommon.js"></script>
+ </head>
+
+ <body>
+
+
+    
+    {{#if isEventOrganizer}}
+      {{> organizerHeader}}
+    {{else}}
+      {{> normalHeader}}
+    {{/if}}
+
+
+    <div id = 'descriptionTab' class='eventInfoTab'>
+
+      <input type="hidden" name="event_id" id="event_id" value = {{id}}></input>
+
+      <img id="eventDescriptionImage" src="../images/UofThacks.png">
+      <h2 id='eventTitle'></h2>
+
+      <div id="description">
+
+      </div>
+
+
+   	</div>
+
+
+ 	<div id='dateTab' class='eventInfoTab'>
+
+    <p id='eventDate' class='eventInfoEntry'></p>
+
+    <p id='eventLocation' class='eventInfoEntry'></p>
+
+    <p id='eventTime' class='eventInfoEntry'></p>
+
+    <p id='eventBy' class='eventInfoEntry'></p>
+
+    <p id='eventOrganizers' class='eventInfoEntry'></p>
+
+
+ 	</div>
+
+  <div id='dateTab' class='eventInfoTab'>
+
+    <span id="seatingInfoText">Seating: 145/300</span>
+    <br>
+    <div id="getTicketsButton">
+      <button id='ticketsButton' type="button" name="button">Get tickets</button>
+    </div>
+
+ 	</div>
+
+
+
+
+  <script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+ </body>
+</html>

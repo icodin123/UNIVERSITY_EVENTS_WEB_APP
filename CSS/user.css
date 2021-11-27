@@ -1,0 +1,149 @@
+body {
+	font-family: Lato, sans-serif;
+	background-color: #F0F8FF;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+}
+
+/** Styling for certain classes */
+
+.card {
+    border-radius: 15px;
+    width: 600px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.eventPic {
+	width: 140px;
+	height: 140px;
+	border: solid white;
+	border-radius: 50%;
+	float: left;
+}
+
+.miniEventPic {
+	width: 50px;
+	height: 50px;
+	border: solid white;
+	border-radius: 50%;
+	float: left;
+	margin-top: 10px;
+}
+
+.miniCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 400px;
+  height: 70px;
+  background-color: white;
+  margin-left: 190px;
+}
+
+
+/** Styling for the profile picture */
+#profilePic {
+	/* Add properties below */
+	width: 150px;
+	margin-left: 20px;
+	margin-top: 95px;
+	border: solid white;
+	border-radius: 50%;
+	position: absolute;
+}
+
+/**Styles for USER NAME */
+#userName {
+	width: 100%;
+	height: 150px;
+	background-color: #089bbf;
+	color: white;
+	float: left;
+}
+
+#userName h1 {
+	position: relative;
+	padding-left: 200px;
+	padding-top: 90px;
+}
+
+/**Styles for the USER INFORMATION*/
+#userInfo {
+	width: 50%;
+	color: black;
+	display: inline-block;
+	float: left;
+}
+
+#userStats ul {
+	margin-left: 150px;
+}
+
+#userStats li {
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+#userBio {
+	margin-left: 30px;
+	width: 45%;
+	float: left;
+}
+
+/**Styles for EVENTS ATTENDING section*/
+.tagContainer {
+	border-radius: 10px;
+	margin-top: 30px;
+	width: 50%;
+	float: right;
+}
+
+.card h3, h4, p {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.userPic {
+	width: 50px;
+	height: 50px;
+	border: solid white;
+	border-radius: 50%;
+	float: left;
+}
+
+/** Styles for FRIEND REQUESTS Section*/
+.requestButtons {
+	width: 550px;
+	height: 120px;
+}
+
+
+.button {
+	margin-left: 100px;
+	margin-top: 25px;
+	padding: 20px;
+	border-radius: 10%;
+	font-size: 20px;
+	color: white;
+	width: 100px;
+	border: none;
+}
+
+.green {
+	background-color: #52de97;
+}
+
+.red {
+	background-color: #c70d3a;
+}
+
+
+.button:hover {
+	cursor: pointer;
+}

@@ -1,0 +1,89 @@
+<!-- 
+Event feed for a user. Updated using JavaScript and DOM manipulation but is updated using a 
+hardcoded object.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Your Event Feed</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/eventFeed.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="../JavaScript/data_repository.js"></script>
+    <script src="../JavaScript/event_feed.js"></script>
+ </head>
+
+ <body>
+
+ 	<div id="header">
+
+    <ul id="headerOptions">
+      <li>
+
+          <form action="" class="searchForm">
+            <input type="text" name="searchInput" placeholder="Search">
+            <input type="submit" value="Search" class="searchButton">
+          </form>
+
+      </li>
+
+      <li class = "textButton">
+        <a href="">Browse events</a>
+      </li>
+
+      <li class = "textButton">
+        <a href="tickets.html">My tickets</a>
+      </li>
+
+      <li class = "textButton">
+        <a href="eventOrganizerApplication.html">Request Promotion</a>
+      </li>
+      <li class = "textButton">
+        <a href="user.html">Profile</a>
+      </li>
+      <li class= "textButton">
+        <div id="settings">
+          <div id="clickSettings">Settings</div>
+          <div id="options">
+            <a href="../index.html"><div class="opt">Logout</div></a>
+            <a href="editUserPage.html"><div class="opt">Edit</div></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+ 	</div>
+
+
+ 	<div id="timeline">
+
+ 	</div>
+
+
+ 	<div id="sideEventInfo">
+
+    <div class="sideEventPost">
+      <img src="../Images/calendarIcon.png" class="sideEventImage">
+      <div class="infoPanelText">
+        <span id='eventInvitesCounter'>14 event invites</span>
+      </div>
+    </div>
+    <br>
+    <div class="sideEventPost">
+      <div class="eventNumCircle"><span id='eventsCount' class="eventNum">3</span></div>
+      <div class="infoPanelText">
+        <span>events coming up</span>
+      </div>
+    </div>
+    <br>
+    <div id="permissionRequests">
+
+    </div>
+
+
+ 	</div>
+  <script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+ </body>
+</html>

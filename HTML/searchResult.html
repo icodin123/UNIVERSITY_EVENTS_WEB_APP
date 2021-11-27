@@ -1,0 +1,84 @@
+<!--
+  Page to display the result of the search for "user3"
+  User3's card is hardcoded here in this HTML file
+  In phase2, the contents of this serach page will depend on the query and will
+  be retrieved from DataBase.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Your Event Feed</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/eventFeed.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/searchResult.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+ </head>
+
+ <body>
+
+ 	<div id="header">
+
+    <ul id="headerOptions">
+      <li>
+
+          <form action="" class="searchForm">
+            <input type="text" name="searchInput" placeholder="Search">
+            <input type="submit" value="Search" class="searchButton">
+          </form>
+
+      </li>
+
+      <li class = "textButton">
+        <a href="">Browse events</a>
+      </li>
+
+      <li class = "textButton">
+        <a href="tickets.html">My tickets</a>
+      </li>
+
+      <li class = "textButton">
+        <a href="eventOrganizerApplication.html">Request Promotion</a>
+      </li>
+      <li class = "textButton">
+        <a href="user.html">Profile</a>
+      </li>
+      <li class= "textButton">
+            <div id="settings">
+              <div id="clickSettings">Settings</div>
+              <div id="options">
+                <a href="../index.html"><div class="opt">Logout</div></a>
+                <a href="editUserPage.html"><div class="opt">Edit</div></a>
+              </div>
+            </div>
+      </li>
+    </ul>
+ 	</div>
+
+  <!-- Hardcoded search result. To be changed to get data from database in phase2-->
+ 	<div id="searchResultList">
+         <p> 1 search result found for "user3"</p>
+         <div class="card">
+            <div id="profilePicture">
+                <img id="profilePic" src="../Images/bond.jpg" />
+            </div>
+             <p class="infoText"> Username: user3 </p>
+             <p class="infoText"class="infoText">Name: James Bond</p>
+             <p class="infoText">Institution: UofT</p>
+             <p class="infoText">Year of Study: 3</p>
+             <hr>
+            
+             <input type="button" id='requestButton' class="green_button" value="Send Request"/>
+    </div>
+
+ 	</div>
+  <script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+    <script src="../JavaScript/data_repository.js"></script>
+    <script src="../JavaScript/event_feed.js"></script>
+    <script src="../JavaScript/searchResult.js"></script>
+
+ </body>
+</html>

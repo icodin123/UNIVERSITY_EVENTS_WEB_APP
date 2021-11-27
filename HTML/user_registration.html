@@ -1,0 +1,100 @@
+<!--
+  Page that allows user to signup to univent (non-university users).
+  Not used in phase-1 demonstartion. The user who is used ("user" - "John Wick") is hardcoded 
+  for the proof-of-concept
+-->
+
+<!DOCTYPE html>
+<document>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/user_registration_style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+
+</head>
+
+<body>
+    <div id="header">
+
+                <ul id="headerOptions">
+                  <li>
+            
+                      <form action="" class="searchForm">
+                        <input type="text" name="searchInput" placeholder="Search">
+                        <input type="submit" value="Search" class="searchButton">
+                      </form>
+            
+                  </li>
+            
+                  <li class = "textButton">
+                    <a href="">Browse events</a>
+                  </li>
+            
+                  <li class = "textButton">
+                    <a href="">My tickets</a>
+                  </li>
+            
+                  <li class = "textButton">
+                    <a href="">Create event</a>
+                  </li>
+                  <li class = "textButton">
+                    <a href="">Profile</a>
+                  </li>
+                  <li class= "textButton">
+                  <div id="settings">
+                    <div id="clickSettings">Settings</div>
+                    <div id="options">
+                      <a href="../index.html"><div class="opt">Logout</div></a>
+                      <a href="editUserPage.html"><div class="opt">Edit</div></a>
+                    </div>
+                  </div>
+                </li>
+                </ul>
+    </div>
+    <br>
+    <form id="registration_form">
+       
+        <div class="card">
+            <h2 class="user_registration_header"> User Registration</h2>
+
+                <h4 class="input_header"> Username </h4>
+                <input id="username" type="text" class="user_text_input" placeholder="example: univiteuser123" required></input>
+
+                <h4 class="input_header"> Password </h4>
+                <input id="password" type="password" class="user_text_input" placeholder="Password" required>
+
+                <h4 class="input_header"> Email </h4>
+                <input id="email" type="email" class="user_text_input" placeholder="example: john.smith@example.com" required>
+
+
+                <h4 class="input_header"> First Name </h4>
+                <input id="first_name" type="text" class="user_text_input" placeholder="example: John" required>
+
+                <h4 class="input_header"> Last Name </h4>
+                <input id="last_name" type="text" class="user_text_input" placeholder="example: Doe" required>
+
+                <h4 class="input_header"> Current Institution </h4>
+                <select class="user_text_input" id="univerisity_selector" required></select>
+
+                <h4 class="input_header"> Program of Study </h4>
+                <select class="user_text_input" id="program_selector" required></select>
+                
+                <h4 class="input_header"> Year of Study </h4>
+                <input type="number" class="user_number_input" min="0" required>
+
+                <hr>
+                <br>
+                <input type="submit" id="register_button" value="register" > </input>
+
+          
+        </div>
+
+    </form>
+    <script type="text/javascript" src="../JavaScript/user_registration.js"></script>
+    <script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+
+</body>
+
+
+
+
+</document>

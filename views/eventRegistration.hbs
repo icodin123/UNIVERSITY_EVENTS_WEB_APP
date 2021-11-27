@@ -1,0 +1,52 @@
+<!--
+Page for user to register for an event (get tickets). T
+his event has custom fields (ie, dietary restrictions in this case). That's why a separate page is needed.
+Otherwise, user can register by simply clicking on "Get Tickets".
+In this case, data for this page is generated using JavaScript and DOM manipulation. But, the event
+for which this page is generated is fixed (ie, hardcoded in JS file).
+In Phase 2, it will be retrieved from DataBase.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Tickets</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/user_registration_style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/eventRegistration.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/newEvent_style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+</head>
+
+<body>
+    
+    {{> organizerHeader}}
+
+    <form id="registration_form">
+        <br>
+        <div class="card" id="container">
+            <h2 class="user_registration_header" id="eventHeader"></h2>
+            <hr>
+            <div id="fields">
+
+
+
+            </div>
+            <br>
+            <br>
+            <hr>
+
+            <input class='green_button' type='submit' id='submit_ticket'></input>
+        </div>
+
+
+    </form>
+    <script type="text/javascript" src="../JavaScript/eventRegistration.js"></script>
+    <script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+
+</body>
+
+
+
+
+</html>

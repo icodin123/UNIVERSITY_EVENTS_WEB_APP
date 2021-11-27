@@ -1,0 +1,11 @@
+#back, #delete{
+  background-color: red;
+}
+
+
+body {
+	margin: 0px;
+	background-color: aliceblue;
+	font-family: Lato, sans-serif;
+  padding: 0;
+}

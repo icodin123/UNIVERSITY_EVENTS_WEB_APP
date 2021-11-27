@@ -1,0 +1,84 @@
+<!--
+	Page to display ticket information for a user (along with list of user's friends)
+	Data for this page is loaded using JavaScript and DOM manipulation but the user
+    whose information is loaded is hardcoded (fixed). 
+    In Phase-2, it will be retrieved dynamically from a DataBase.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<title>Tickets</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/misc.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/tickets.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	<div id="mainBody">
+
+		<!-- Div for NAVIGATION BAR -->
+		<div id="header">
+		    <ul id="headerOptions">
+		      <li>
+		          <form action="" class="searchForm">
+		            <input type="text" name="searchInput" placeholder="Search">
+		            <input type="submit" value="Search" class="searchButton">
+		          </form>
+		      </li>
+
+		      <li class = "textButton">
+		        <a href="eventFeed.html">Browse Events</a>
+		      </li>
+
+		      <li class = "textButton">
+		        <a href="tickets.html">My Tickets</a>
+		      </li>
+
+		      <li class = "textButton">
+		        <a href="eventOrganizerApplication.html">Request Promotion</a>
+		      </li>
+		      <li class = "textButton">
+		        <a href="finalUser.html">Profile</a>
+		      </li>
+		      <li class= "textButton">
+		      	<div id="settings">
+		      		<div id="clickSettings">Settings</div>
+		      		<div id="options">
+		      			<a href="../index.html"><div class="opt">Logout</div></a>
+		      			<a href="editUserPage.html"><div class="opt">Edit</div></a>
+		      		</div>
+		      	</div>
+		      </li>
+		    </ul>
+		</div>
+
+		<!-- Div for TICEKT CARDS -->
+		<div id="ticketInfo">
+
+		</div>
+
+		<!-- 
+			Hardcoding an image for the schedule for phase1
+			In phase2, Google's Calendar API will be used.
+		-->
+		<div id="calendar">
+			<h2 class="heading"> Your Schedule </h2>
+			<img src="../Images/calendar.jpg" />
+		</div>
+
+	</div>
+
+	<!-- 
+	Div for the Follower List that shows up when inviting followers 
+	Originally, cannot be seen. But when shown, is displayed in the middle of the screen	
+	-->
+	<div id="followerList">
+
+	</div>
+	<script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+	<script type="text/javascript" src="../JavaScript/data_repository.js"></script>
+	<script type="text/javascript" src="../JavaScript/tickets.js"></script>
+	</body>
+</html>

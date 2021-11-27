@@ -1,0 +1,80 @@
+<!--
+Event feed for a user. Updated using JavaScript and DOM manipulation but is updated using a
+hardcoded object.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Your Event Feed</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/eventFeed.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+ </head>
+ <body>
+
+
+    {{#if isEventOrganizer}}
+      {{> organizerHeader}}
+    {{else}}
+      {{> normalHeader}}
+    {{/if}}
+
+
+  <input type="hidden" name="user_id" id="user_id" value = {{id}}></input>
+
+  <div id="timeline">
+ 	</div>
+ 	<div id="sideEventInfo">
+    <div class="sideEventPost">
+      <img src="../images/calendarIcon.png" class="sideEventImage">
+      <div class="infoPanelText">
+        <span id='eventInvitesCounter'>Number of invites: {{invitationsTotal}}</span>
+      </div>
+    </div>
+    <br>
+    <div class="sideEventPost">
+      <div class="eventNumCircle"><span id='eventsCount' class="eventNum">{{eventsUpcoming}}</span></div>
+      <div class="infoPanelText">
+        <span>events coming up</span>
+      </div>
+    </div>
+    <br>
+    <div id="permissionRequests">
+
+      {{#each result}}
+
+        <div class='sideEventPost'>
+
+          <strong>{{this.event.name}}</strong>
+          <br>
+
+          <div class='contactPermissionButtons'>
+
+              <input type="hidden" name="invitation_id" id="invitation_id" value = {{invitation_id}}></input>
+              <a class="acceptButton" href="/acceptInvitation/{{this.event._id}}/{{invitation_id}}">Accept</a>
+              <a class="denyButton" href="/denyInvitation/{{invitation_id}}">Deny</a>
+
+          </div>
+
+          <br>
+          <br>
+
+          <span class='sideEventDescText'>{{this.from.firstname}} {{this.from.lastname}} invited you to {{this.event.eventName}}</span>
+
+
+        </div>
+
+      {{/each}}
+
+
+
+    </div>
+ 	</div>
+  <script type="text/javascript" src="/javascripts/dropdown.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/javascripts/event_feed.js"></script>
+ </body>
+</html>

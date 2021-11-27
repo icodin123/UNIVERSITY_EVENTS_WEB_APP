@@ -1,0 +1,236 @@
+body {
+	background-color: #e6ecf0;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+a {
+ 	text-decoration: none;
+ 	color: black;
+}
+
+
+
+#header {
+	padding: 5px;
+	background-color: blue;
+}
+
+
+.editButton{
+	cursor: pointer;
+}
+
+
+.searchForm input{
+	font-weight: 900;
+	background-color: white;
+	text-decoration-color: black;
+	display: inline;
+  min-height: 10px;
+  height: auto;
+
+}
+
+
+#headerOptions{
+  line-height: 20px;
+}
+
+
+#headerOptions li{
+	margin-right: 20px;
+	font-weight: bold;
+	list-style: none;
+	text-align: center;
+	display:inline-block;
+  vertical-align: middle;
+}
+
+#headerOptions .adminHeaderEntryButton{
+  line-height: 15px;
+}
+
+.adminHeaderEntry {
+  padding-left: 60px;
+  color: white;
+}
+
+.adminHeaderEntryButton a{
+  padding-left: 60px;
+  color: white;
+}
+
+.adminHeaderEntryButton{
+  float: right;
+  background-color: Transparent;
+  border: none;
+  font-size: 110%;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.bannerPic {
+	display: block;
+	width: 100%;
+
+	height: 300px;
+
+}
+
+
+.moreInfoButton button{
+	display:inline-block;
+	border-radius: 10px;
+	font-weight: bold;
+  font-size: 150%;
+  border: none;
+  color: white;
+	background-color: blue;
+	height: 25px;
+	width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+#sideEventInfo {
+	background-color: white;
+	padding: 10px;
+
+	text-align: center;
+	font-size: 125%;
+
+	margin-top: 20px;
+	margin-left: 50px;
+	width: 300px;
+	min-height: 200px;
+	float:right;
+}
+
+
+#timeline {
+
+	border-radius: 50px;
+
+
+	float:left;
+	border-radius: 10px;
+	background-color: white;
+
+	margin-top: 20px;
+	width: 700px;
+  margin-left: 100px;
+}
+
+.adminTabEntry{
+  line-height: 15px;
+}
+
+.adminTabEntry img{
+  vertical-align: middle;
+  float: right;
+  width: 30px;
+}
+
+.editUserButton{
+	cursor: pointer;
+	position: relative;
+	left: 60px;
+}
+
+.adminTabEntryStatus{
+  position: relative;
+	float: right;
+	right: 250px;
+}
+
+.adminTabEntryTitle{
+  font-size: 120%;
+	position: relative;
+}
+
+.adminTab {
+
+	border-radius: 50px;
+
+
+	float:left;
+	border-radius: 10px;
+	background-color: white;
+
+	margin-top: 20px;
+	width: 550px;
+
+
+  position: relative;
+  margin-top: 20px;
+  margin-left: 70px;
+
+  font-style: italic;
+
+
+}
+
+
+
+.timelineHeader {
+	border-bottom: 1px solid grey;
+}
+
+.timelineHeader ul {
+	margin: 0px;
+}
+
+.timelineHeader ul li {
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 150%;
+	font-weight: bold;
+
+  display:inline-block;
+}
+
+
+.acceptButton{
+	background-color: green;
+	font-size: 100%;
+	color: white;
+  border-radius: 10px;
+	border: none;
+}
+
+.descText{
+	font-size: 50%;
+}
+
+.adminTabEntry{
+	padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.eventPostingInfoBar{
+	float:left;
+	display:inline-block;
+}
+
+.adminTabTitle{
+	font-size: 150%;
+	text-align: center;
+  font-weight: 500;
+}
+
+
+
+
+
+.eventPostImg {
+	max-width: 500px;
+	margin-top: 15px;
+}

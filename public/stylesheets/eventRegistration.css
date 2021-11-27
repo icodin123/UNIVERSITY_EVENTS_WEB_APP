@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    background-color: #F0F8FF;
+    padding: 0;
+}
+
+.green_button {
+    display: block;
+    margin: auto;
+    background-color: rgb(70, 203, 63); /* Green */
+    color: white;
+    padding: 12px 32px;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 12pt;
+    font-weight: bold;
+
+    margin-bottom: 0px;
+
+  }
+
+.user_registration_header{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.field_description{
+  font-size: 10pt;
+  text-align: center;
+}

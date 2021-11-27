@@ -1,0 +1,58 @@
+<!--
+  Page that displays the initial status of the admin dashboard. Hardcoded using data from
+    data_repository, will use DataBase to retrieve this in phase2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Admin portal</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/adminPortal.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+    <script src="/javascripts/adminPortalCommon.js"></script>
+
+ </head>
+
+ <body>
+
+   <div id="header">
+
+     <ul id="headerOptions">
+
+       <li id='loggedInText' class="adminHeaderEntry"></li>
+
+       <a id='logout' href="/admin/logout" class="adminHeaderEntryButton" name="logoutButton">Log out</a>
+
+     </ul>
+  	</div>
+
+
+    <div id="userPanel" class='adminTab'>
+
+      <div class="adminTabTitle">
+        manage user accounts
+      </div>
+
+   </div>
+
+
+
+ 	<div id="universityPanel" class='adminTab'>
+
+       <div class="adminTabTitle">
+         university applications pending review
+       </div>
+
+ 	</div>
+
+
+      </div>
+ 		</div>
+ 	</div>
+
+
+
+ </body>
+</html>

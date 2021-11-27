@@ -1,0 +1,224 @@
+body {
+	background-color: #F0F8FF;
+	margin: 0;
+	font-family: Lato, sans-serif;
+}
+
+
+a {
+ 	text-decoration: none;
+}
+
+
+
+
+.bannerPic {
+	display: block;
+	width: 100%;
+
+	height: 300px;
+
+}
+
+
+.eventAttendiesText{
+	font-style: italic;
+	float: right;
+
+}
+
+
+.moreInfoButton button{
+	cursor: pointer;
+	display:inline-block;
+	border-radius: 10px;
+	font-weight: bold;
+  font-size: 150%;
+  border: none;
+  color: white;
+	background-color:   #00b8e6;
+	height: 25px;
+	width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+	float: left;
+	margin-right: 10px;
+	width: 300px;
+	height: 30px;
+	margin-left: 20px;
+}
+
+.sideEventImage{
+	margin-top: 5px;
+	 height: 50px;
+	 width:50px;
+	 float: left;
+}
+
+#sideEventInfo {
+	background-color: white;
+	padding: 10px;
+
+	margin-right: 20px;
+
+	text-align: center;
+	font-size: 125%;
+
+	margin-top: 20px;
+	margin-left: 5px;
+	width: 300px;
+	min-height: 200px;
+	float:right;
+}
+
+
+#timeline {
+	float: left;
+	border-radius: 50px;
+	background-color: Transparent;
+
+	width: 800px;
+  margin-left: 30px;
+}
+
+
+#userAccounts {
+
+	border-radius: 50px;
+
+
+	float:right;
+	border-radius: 10px;
+	background-color: white;
+
+	margin-top: 20px;
+	width: 550x;
+	padding-right: 120px;
+
+}
+
+#universityApplications {
+
+	border-radius: 50px;
+
+	float:left;
+	border-radius: 10px;
+	background-color: white;
+
+	margin-top: 20px;
+	width: 550px;
+
+}
+
+#eventInvitesCounter{
+  vertical-align: center;
+	font-weight: 600;
+}
+
+#eventCounter{
+	vertical-align: center;
+	font-weight: 600;
+}
+
+.eventNum{
+  vertical-align: middle;
+	font-weight: 700;
+}
+
+.eventNumCircle{
+	color: black;
+	border-radius: 50px;
+	background-color: red;
+  text-align: center;
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+  float: left;
+	margin-top: 5px;
+}
+
+
+
+.contactPermissionButtons button{
+	font-size: 100%;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.acceptButton{
+	background-color: green;
+	margin-left: 60px;
+	float: left;
+	cursor: pointer;
+}
+
+.denyButton{
+	background-color: red;
+	margin-right: 60px;
+	float: right;
+	cursor: pointer;
+}
+
+.sideEventDescText{
+	font-size: 90%;
+}
+
+.infoPanelText{
+	line-height: 60px;
+}
+
+.infoPanelText span{
+	font-weight: 600;
+}
+
+.sideEventPost{
+	border: 2px solid grey;
+	min-height: 60px;
+	margin-top: 20px;
+}
+
+.eventPost {
+  background-color: white;
+	overflow: auto;
+	min-height: 10px;
+	border-bottom: 1px solid grey;
+	width: inherit;
+	margin-top: 35px;
+	border-radius: 25px;
+}
+
+.eventPostingInfoBar{
+	float:left;
+	display:inline-block;
+	width:inherit;
+}
+
+.eventPostTitle strong{
+	font-size: 135%;
+	text-align: center;
+	font-style: italic;
+}
+
+
+.eventPostContent {
+	margin: 0px;
+
+	width: 740px;
+  position: relative;
+
+	margin-left: 30px;
+	margin-right: 30px;
+
+
+	font-style: italic;
+}
+
+
+.eventPostImg {
+	max-width: 800px;
+}

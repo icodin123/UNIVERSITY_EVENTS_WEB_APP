@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>{{currUser.firstname}} {{currUser.lastname}}</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/misc.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/user.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+
+
+		 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<input type="hidden" id="user_id" value = {{currUser._id}}></input>
+		<input type="hidden" id="same_user" value={{sameUser}}></input>
+
+		<div id="profilePicture">
+			<img id="profilePic" src="data:image/jpg;base64, {{userPic}}"/>
+		</div>
+
+		{{#if isEventOrganizer}}
+			{{> organizerHeader}}
+		{{else}}
+			{{> normalHeader}}
+		{{/if}}
+
+
+		<!-- User Name Section -->
+		<div id="userName">
+			<h1>{{currUser.firstname}} {{currUser.lastname}}</h1>
+		</div>
+
+		<!-- User Info Section: Hardcoded for phase1. Will retrieve from DB (Data Base) in phase2 -->
+		<div id="userInfo">
+			<div class="inlineList" id="userStats">
+				<ul>
+					<li><span id="friendNum">{{currUser.friends.length}}</span> Friends </li>
+				</ul>
+			</div>
+
+			<div id="userBio">
+				<h2>Studies at <span id="uniName" class="emphasis">{{currUser.currentInstitution}}</span></h2>
+				<p id="bioText"><span class="emphasis">Bio:</span>
+					{{currUser.bio}}
+				</p>
+				<h2 class="heading"><span class="emphasis">Friends</span></h2>
+				<div id="friendList" class="inlineList">
+					<ul id="listOfFriends">
+				        {{#each friends}}
+							<li>
+								<a href="/users/dashboard/{{this._id}}">
+									<img
+									src="data:image/jpg;base64, {{this.profilePic.data}}"
+									class="userPic" />
+								</a>
+							</li>
+				        {{/each}}   
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Info about events this user is attending -->
+		<div id="userAttending" class="tagContainer">
+			<h3> Events {{currUser.firstname}} is attending </h3>
+			{{#each currUser.eventsAttending}}
+				<div class="card">
+				
+					<!-- Harcoded for Phase 1. Will be determined dynamically from server in phase2-->
+					<h3 class="emphasis heading">{{this.date}} --- {{this.location}}</h3>
+					<h4 class="heading">{{this.eventName}} </h4>
+					<p>{{this.miniDesc}} </p>
+				</div>
+			{{/each}}
+
+			<!-- Event 1-->
+
+
+
+		</div>
+
+		<!-- Info about friend requests this person has -->
+		{{#if sameUser}}
+			<div id="friendRequests" class="tagContainer">
+				<h3> Friend Requests </h3>
+				{{#each requests}}
+					<div class="card">
+						<img src="data:image/jpg;base64, {{this.profilePic.data}}" class="eventPic" />
+						<h3 class="emphasis heading"> {{this.firstname}} {{this.lastname}} </h3>
+						<div class="requestButtons">
+							<input type="button" id="acceptUser-{{this._id}}" value="accept" class="button green acceptButton"/>
+							<input type="button" id="declineUser-{{this._id}}" value="decline" class="button red declineButton"/>
+						</div>
+					</div>
+				{{/each}}
+
+				<!-- Friend Request 1: Hardcooded for phase1. Will retrive from DB in phase2 -->
+
+			</div>
+		{{/if}}
+
+		<script type="text/javascript" src="/javascripts/dropdown.js"></script>
+		<script type="text/javascript" src="/javascripts/user.js"></script>
+	</body>
+</html>

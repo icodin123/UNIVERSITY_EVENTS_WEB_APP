@@ -1,0 +1,99 @@
+<!--
+  Page to edit University of Waterloo's information.
+  For phase1, the change in information is not stored and a separate page with final information is 
+  used to give illusion of state.
+  In phase2, this data will be updated in a DataBase so that when loaded the change stays.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Edit Info </title>
+    <link rel="stylesheet" type="text/css" href="../CSS/universityApplication.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/editUser.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="header">
+        <ul id="headerOptions">
+          <li>
+              <form action="" class="searchForm">
+                <input type="text" name="searchInput" placeholder="Search">
+                <input type="submit" value="Search" class="searchButton">
+              </form>
+          </li>
+
+         <li class = "textButton">
+            <a href="waterlooInit.html">Profile</a>
+          </li>
+
+          <li class = "textButton">
+            <a href="eventFeed.html">Browse Events</a>
+          </li>
+
+          <li class = "textButton">
+            <a>     </a>
+          </li>
+
+          <li class = "textButton">
+            <a>                  </a>
+          </li>
+
+          <li class= "textButton">
+            <div id="settings">
+                <div id="clickSettings">Settings</div>
+                <div id="options">
+                    <a href="../index.html"><div class="opt">Logout</div></a>
+                    <a href="editUniversityPage.html"><div class="opt">Edit</div></a>
+                </div>
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <form id="registration_form">
+
+        <div class="card">
+            <h2 class="user_registration_header">Edit University Account</h2>
+            
+                <!-- Value for username and password has been hardcoded as "placeholder" attribute here
+                     In phase2, it will be retrieved from data base.
+                -->
+                <strong class="input_header">Username</strong>
+                <input id="username" type="text" class="user_text_input" placeholder="temp" required></input>
+
+                <strong class="input_header">Password</strong>
+                <input id="password" type="text" class="user_text_input" placeholder="temp" required></input>
+
+                <strong class="input_header">Biography</strong>
+                <textarea class="user_text_input" id="biography"></textarea>
+
+                <strong class="input_header">Profile Picture</strong>
+                <input type="file" class="user_text_input" id="universityImage"/>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="applyButton">
+                   <input type="button" id="apply" value="Save"></input>
+                   <input type="button" id="back" value="Back"></input>
+                </div>
+
+        </div>
+
+    </form>
+
+    <script src="../JavaScript/editUniversity.js"></script>
+</body>
+
+
+
+
+</html>

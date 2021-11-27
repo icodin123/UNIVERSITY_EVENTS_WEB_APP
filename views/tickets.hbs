@@ -1,0 +1,81 @@
+<!--
+	Page to display ticket information for a user (along with list of user's friends)
+	Data for this page is loaded using JavaScript and DOM manipulation but the user
+    whose information is loaded is hardcoded (fixed).
+    In Phase-2, it will be retrieved dynamically from a DataBase.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<title>Tickets</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/misc.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/tickets.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	<div id="mainBody">
+
+		<!-- Div for NAVIGATION BAR -->
+		
+		{{#if isEventOrganizer}}
+			{{> organizerHeader}}
+		{{else}}
+			{{> normalHeader}}
+		{{/if}}
+
+
+		<!-- Div for TICEKT CARDS -->
+
+		{{#each events}}
+		<div id="ticketInfo">
+			<div class="card" id="~{{this._id}}">
+				<h4 class="emphasis heading"> {{this.eventName}} </h3>
+				<h4 class="emphasis heading">{{this.date}} --- {{this.location}}</h4>
+				<p class="eventDesc">{{this.description}}</p>
+				
+			</div>
+		</div>
+		{{/each}}
+		<div class="friendscont">
+					{{#each events}}
+			<div class="friends" id="{{this._id}}">
+				
+				{{#each customFields}}
+			
+					<div>
+						<hr>
+					<a class="custom"> {{this.username}} </a>
+					<input type="button" name="{{this.username}}" value="invite" id="{{this.id}}" class="inviteButton">
+					<hr>
+					</div>
+					
+				
+				{{/each}}
+
+			</div> 
+		{{/each}}
+
+
+
+		</div>
+
+
+
+	</div>
+
+	<!--
+	Div for the Follower List that shows up when inviting followers
+	Originally, cannot be seen. But when shown, is displayed in the middle of the screen
+	-->
+	<div id="followerList">
+
+	</div>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="/javascripts/dropdown.js"></script>
+	<script type="text/javascript" src="/javascripts/tickets.js"></script>
+	<script type="text/javascript" src="/javascripts/data_repository.js"></script>
+	</body>
+</html>

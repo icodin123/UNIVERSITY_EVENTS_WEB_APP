@@ -1,0 +1,32 @@
+<!--
+  Page to be displayed in case the user types something other than "user3" in the search bar.
+  ONLY A CONTINGENCY. IF ALL GOES WELL, THIS WILL NEVER BE SHOWN
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Your Event Feed</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/eventFeed.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/searchResult.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+ </head>
+
+ <body>
+
+ 	{{> organizerHeader}}
+
+
+ 	<div id="searchResultList">
+         <p> no search results found</p>
+
+ 	</div>
+    <script src="../JavaScript/data_repository.js"></script>
+    <script src="../JavaScript/event_feed.js"></script>
+
+ </body>
+</html>

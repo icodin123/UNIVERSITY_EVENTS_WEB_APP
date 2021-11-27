@@ -1,0 +1,87 @@
+<!--
+Page for user to register for an event (get tickets). T
+his event has custom fields (ie, dietary restrictions in this case). That's why a separate page is needed.
+Otherwise, user can register by simply clicking on "Get Tickets". 
+In this case, data for this page is generated using JavaScript and DOM manipulation. But, the event 
+for which this page is generated is fixed (ie, hardcoded in JS file). 
+In Phase 2, it will be retrieved from DataBase.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Tickets</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/user_registration_style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/eventRegistration.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/newEvent_style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/headerBar.css">
+</head>
+
+<body>
+    <div id="header">
+
+                  <ul id="headerOptions">
+                    <li>
+              
+                        <form action="" class="searchForm">
+                          <input type="text" name="searchInput" placeholder="Search">
+                          <input type="submit" value="Search" class="searchButton">
+                        </form>
+              
+                    </li>
+              
+                    <li class = "textButton">
+                      <a href="eventFeed.html">Browse events</a>
+                    </li>
+              
+                    <li class = "textButton">
+                      <a href="tickets.html">My tickets</a>
+                    </li>
+              
+                    <li class = "textButton">
+                      <a href="eventOrganizerApplication.html">Request Promotion</a>
+                    </li>
+                    <li class = "textButton">
+                      <a href="user.html">Profile</a>
+                    </li>
+                    <li class= "textButton">
+                    <div id="settings">
+                      <div id="clickSettings">Settings</div>
+                      <div id="options">
+                        <a href="../index.html"><div class="opt">Logout</div></a>
+                        <a href="editUserPage.html"><div class="opt">Edit</div></a>
+                      </div>
+                    </div>
+                  </li>
+                  </ul>
+      </div>
+
+    <form id="registration_form">
+        <br>
+        <div class="card" id="container">
+            <h2 class="user_registration_header" id="eventHeader"></h2>
+            <hr>
+            <div id="fields">
+
+
+
+            </div>
+            <br>
+            <br>
+            <hr>
+
+            <input class='green_button' type='submit' id='submit_ticket'></input>
+        </div>
+
+
+    </form>
+    <script type="text/javascript" src="../JavaScript/eventRegistration.js"></script>
+    <script type="text/javascript" src="../JavaScript/dropdown.js"></script>
+
+</body>
+
+
+
+
+</html>

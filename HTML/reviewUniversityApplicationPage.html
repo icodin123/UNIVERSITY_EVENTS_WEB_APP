@@ -1,0 +1,53 @@
+<!--
+    Page for admin dashboard to review a university's application
+    Data for this page is loaded using JavaScript and DOM manipulation but the university
+    whose application is loaded is hardcoded (fixed). 
+    In Phase-2, it will be retrieved dynamically from a DataBase.
+-->
+
+<!DOCTYPE html>
+<document>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/universityApplication.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/universityApplicationReview.css">
+    <script src="../JavaScript/data_repository.js"></script>
+    <script src="../JavaScript/reviewUniversityApplication.js"></script>
+</head>
+
+<body>
+
+  <div class="card">
+    <h2 class="user_registration_header">Review university application</h2>
+    <br>
+    <strong class="input_header">University name:</strong> <br> <br>
+
+    <strong id='universityName'>a</strong> <br> <br>
+
+    <strong class="input_header"> Official email:</strong> <br> <br>
+
+    <strong id='universityEmail'>b</strong> <br> <br>
+
+    <strong class="input_header"> Contact person </strong> <br> <br>
+
+    <strong id='universityContact'>c</strong> <br> <br>
+
+    <strong>Letter from the university:</strong> <br>
+
+    <p id = 'universityLetter' class="input_header">Letter</p>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="applyButton">
+      <button id="accept">Accept</button>
+      <button id="deny" >Deny</button>
+    </div>
+  </div>
+
+</body>
+
+
+
+
+</document>

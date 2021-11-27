@@ -1,0 +1,70 @@
+#header {
+	padding: 5px;
+	background-color:  #00b8e6;
+}
+
+a {
+ 	text-decoration: none;
+}
+
+#headerOptions li{
+	margin-right: 20px;
+	font-weight: bold;
+	list-style: none;
+	text-align: center;
+
+	display:inline-block;
+}
+
+#headerOptions .searchButton{
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+}
+
+#headerOptions .textButton {
+  margin-left: 60px;
+}
+
+#headerOptions .textButton a{
+	color: white;
+}
+
+.searchForm input{
+	font-weight: 900;
+	background-color: white;
+	text-decoration-color: black;
+	display: inline;
+  min-height: 10px;
+  height: auto;
+
+}
+
+#clickSettings {
+	color: white;
+}
+
+#clickSettings:hover {
+	cursor: pointer;
+}
+
+#settings {
+	margin-left: 170px;
+}
+
+#options {
+	display: none;
+	position: absolute;
+	background-color: aliceblue;
+	min-height: 40px;
+	width: 80px;
+}
+
+.textButton #settings #options .opt {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.textButton #settings #options a{
+	color: black;
+}

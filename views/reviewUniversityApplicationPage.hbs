@@ -1,0 +1,78 @@
+<!--
+    Page for admin dashboard to review a university's application
+    Data for this page is loaded using JavaScript and DOM manipulation but the university
+    whose application is loaded is hardcoded (fixed).
+    In Phase-2, it will be retrieved dynamically from a DataBase.
+-->
+
+<!DOCTYPE html>
+<document>
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/universityApplication.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/universityApplicationReview.css">
+    <script src="/javascripts/data_repository.js"></script>
+    <script src="/javascripts/reviewUniversityApplication.js"></script>
+</head>
+
+<body>
+
+  <div class="card">
+    <h2 class="user_registration_header">Review university application</h2>
+    <br>
+
+    <form id="acceptForm" action="/acceptApplication" method="post">
+
+      <input type="hidden" name="university_id" id="university_id" value = {{id}}></input>
+
+      <strong class="input_header">University name:</strong> <br> <br>
+
+      <strong id='universityName'>a</strong> <br> <br>
+
+      <strong class="input_header"> Official email:</strong> <br> <br>
+
+      <strong id='universityEmail'>b</strong> <br> <br>
+
+      <strong class="input_header"> Contact person </strong> <br> <br>
+
+      <strong id='universityContact'>c</strong> <br> <br>
+
+      <strong>Letter from the university:</strong> <br>
+
+      <p id = 'universityLetter' class="input_header">Letter</p>
+
+      <br>
+
+      <p class="input_header">Enter username and password for new university account:</p>
+
+      <br>
+
+      <div id="user_input">
+        <input type="text" id="username_input" name="username" placeholder="Username">
+        <input type="password" id="password_input" name="password" placeholder="Password">
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="applyButton">
+        <button type="submit" id="accept">Accept</button>
+      </div>
+
+    </form>
+
+    <form id="denyForm" action="/denyApplication" method="delete">
+      <input type="hidden" name="university_id_deny" id="university_id_deny" value = {{id}}></input>
+      <div class="applyButton">
+        <button type="submit" id="deny" >Deny</button>
+      </div>
+    </form>
+
+    </div>
+
+</body>
+
+
+
+
+</document>

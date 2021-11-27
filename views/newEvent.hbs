@@ -1,0 +1,81 @@
+<!--
+Page to create a new event.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Create Event </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/newEvent_style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/headerBar.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    
+    {{#if isEventOrganizer}}
+        {{> organizerHeader}}
+    {{else}}
+        {{> normalHeader}}
+    {{/if}}
+
+
+    <form id="registration_form" enctype="multipart/form-data" action="/events/createEvent" method="post">
+
+        <div class="event_card">
+            <h2 class="user_registration_header"> Event Creation</h2>
+            <hr>
+                <h3 class="user_registration_header"> Required Fields</h3>
+
+                <h4 class="input_header"> Event Name </h4>
+                <input id="eventName" type="text" class="user_text_input" name="eventName" placeholder="example: univent tea party" required></input>
+
+                <h4 class="input_header"> Short Description </h4>
+                <textarea id="eventShortDescription" type="text" name="shortDescription" class="user_text_input"  required> </textarea>
+
+                <h4 class="input_header"> Description </h4>
+                <textarea id="eventDescription" type="text" name="description" class="user_text_input"  required> </textarea>
+
+                <h4 class="input_header"> Event image </h4>
+                <input type="file" class="user_text_input" name="eventImage" id="event-image-upload"/>
+
+
+                <h4 class="input_header"> Location </h4>
+                <input id="eventLocation" type="text" name="location" class="user_text_input" placeholder="123 St.George St, L9F 0P3 BA3500" required>
+
+                <h4 class="input_header"> Capacity </h4>
+                <input id="eventCapacity" type="number" name="capacity" class="user_number_input" min="0" required>
+
+                <h4 class="input_header"> Reserved </h4>
+                <input id="eventReserved" name="reserved" type="number" class="user_number_input" min="0" required>
+
+                <h4 class="input_header"> Start Time </h4>
+                <input id="eventStartTime" name="time" type="text" class="user_number_input" min="0" required>
+
+                <h4 class="input_header"> End Time </h4>
+                <input id="eventEndTime" name="endTime" type="text" class="user_number_input" min="0" required>
+
+                <h4 class="input_header"> Date </h4>
+                <input id="eventDate" name="date"type="text" class="user_number_input" min="0" required>
+
+                <hr>
+
+
+
+                <input type="submit" id="submit_event" class="green_button"value="Create event" > </input>
+                <input type="text" id="cf" name="cf" value="" hidden>
+        </div>
+
+
+        
+    </form>
+    <script type="text/javascript" src="/javascripts/dropdown.js"></script>
+    <script type="text/javascript" src="/javascripts/newEvent.js"></script>
+
+</body>
+
+
+
+
+</html>
